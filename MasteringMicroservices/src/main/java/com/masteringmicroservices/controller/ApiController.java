@@ -11,10 +11,10 @@ import com.masteringmicroservices.service.ExternalService;
 public class ApiController {
 
 	@Autowired
-	private ExternalService extenalService;
-	
+	private ExternalService externalService;
+
+	@GetMapping("/external")
 	public String callExternal() {
-		return extenalService.callExternalService();
+		return externalService.callExternalService();
 	}
-	
 }
