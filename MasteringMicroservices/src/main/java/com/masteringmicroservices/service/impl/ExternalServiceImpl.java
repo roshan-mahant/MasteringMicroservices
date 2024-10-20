@@ -1,6 +1,7 @@
 package com.masteringmicroservices.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.masteringmicroservices.service.ExternalService;
@@ -9,6 +10,7 @@ import io.github.resilience4j.bulkhead.annotation.Bulkhead;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 
+@Service
 public class ExternalServiceImpl implements ExternalService {
 	
 	private final RestTemplate restTemplate;
