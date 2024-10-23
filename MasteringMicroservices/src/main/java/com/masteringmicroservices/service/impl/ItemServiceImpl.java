@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.masteringmicroservices.model.Item;
 import com.masteringmicroservices.service.ItemService;
 
+@Service
 public class ItemServiceImpl implements ItemService {
 	
 	private List<Item> items = new ArrayList<>();
